@@ -29,13 +29,13 @@ INSERT INTO
     "next"
   )
 VALUES
-  (1, 1, 'trainieren', 'practice', null),
-  (2, 1, 'hallo', 'hello', null),
-  (3, 1, 'maison', 'haus', null),
-  (4, 1, 'Entwickler', 'developer', null),
-  (5, 1, 'Übersetzen', 'translate', null),
-  (6, 1, 'tolle', 'amazing', null),
-  (7, 1, 'hund', 'dog', null),
+  (1, 1, 'trainieren', 'practice', 2),
+  (2, 1, 'hallo', 'hello', 3),
+  (3, 1, 'haus', 'house', 4),
+  (4, 1, 'Entwickler', 'developer', 5),
+  (5, 1, 'Übersetzen', 'translate', 6),
+  (6, 1, 'tolle', 'amazing', 7),
+  (7, 1, 'hund', 'dog', 8),
   (8, 1, 'katze', 'cat', null);
 
 UPDATE
