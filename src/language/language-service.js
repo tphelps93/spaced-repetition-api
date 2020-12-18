@@ -31,26 +31,20 @@ const LanguageService = {
       .where({ language_id });
   },
 
-  getLanguageHead(db, language_id) {
-    return db
-      .from('word')
-      .select(
-        'id',
-        'language_id',
-        'correct_count',
-        'incorrect_count',
-        'original'
-      )
-      .where({ language_id });
+  getLanguageHead(db, id) {
+    return db('word')
+      .select('id', 'next', 'original', 'correct_count', 'incorrect_count')
+      .where({ id })
+      .first();
   },
 
   fillList(db, language, words) {
     let wordList = new LinkedList();
-
     wordList.id = language.id;
     wordList.name = language.name; // German
     wordList.total_score = language.total_score;
     let word = words.find(w => w.id === language.head);
+   
 
     wordList.insertFirst({
       id: word.id,

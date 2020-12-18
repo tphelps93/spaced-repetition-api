@@ -43,9 +43,9 @@ languageRouter.get('/', async (req, res, next) => {
 
 languageRouter.get('/head', async (req, res, next) => {
   try {
-    const [nextWord] = await LanguageService.getLanguageHead(
+    const nextWord = await LanguageService.getLanguageHead(
       req.app.get('db'),
-      req.language.id
+      req.language.head
     );
 
     if (!nextWord) {
@@ -60,7 +60,6 @@ languageRouter.get('/head', async (req, res, next) => {
       wordCorrectCount: nextWord.correct_count,
       totalScore: req.language.total_score,
     });
-    next();
   } catch (error) {
     next(error);
   }
