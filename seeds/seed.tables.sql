@@ -11,8 +11,8 @@ VALUES
     1,
     'tphelps93',
     'Taylor Phelps',
-    -- password = "pass"
-    '$2a$10$fCWkaGbt7ZErxaxclioLteLUgg4Q3Rp09WW0s/wSLxDKYsaGYUpjG'
+    -- password = "Riftpass321!"
+    '$2a$12$zt2GKNBErCBAojcp8Lb4Pe7vwhSdHFG7FUQHxLFdN/uE/LXQpaXfC'
   );
 
 INSERT INTO
