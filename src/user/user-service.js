@@ -53,13 +53,13 @@ const UserService = {
       const seq = await db.from('word_id_seq').select('last_value').first();
 
       const languageWords = [
-        ['trainieren', 'practice', null],
-        ['hallo', 'hello', null],
-        ['haus', 'house', null],
-        ['Entwickler', 'developer', null],
-        ['Übersetzen', 'translate', null],
-        ['tolle', 'amazing', null],
-        ['hund', 'dog', null],
+        ['trainieren', 'practice', 2],
+        ['hallo', 'hello', 3],
+        ['haus', 'house', 4],
+        ['Entwickler', 'developer', 5],
+        ['Übersetzen', 'translate', 6],
+        ['tolle', 'amazing', 7],
+        ['hund', 'dog', 8],
         ['katze', 'cat', null],
       ];
 
